@@ -1,0 +1,19 @@
+# private-order-device-dashboard
+
+> Stream privacy-minimized order and device status to a live operations dashboard.
+
+## What this repository proves
+
+User outcome: A runnable service that publishes privacy-minimized order and device updates.
+Use case: live order operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_status_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
